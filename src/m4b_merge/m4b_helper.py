@@ -307,6 +307,7 @@ class M4bMerge:
             )
             args.append("--no-conversion")
         else:
+            args.append(f"--audio-codec=libfdk_aac")
             args.append(f"--audio-bitrate={target_bitrate}")
             args.append(f"--audio-samplerate={target_samplerate}")
 
