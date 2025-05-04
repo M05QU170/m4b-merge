@@ -48,7 +48,7 @@ def validate_args(args):
             config.junk_dir = Path('/input/done')
         else:
             default_input = Path.home()
-            config.junk_dir = Path(f"{default_input}/input/done")
+            config.junk_dir = Path(f"{default_input}/m4b_merge/input/done")
     # Log Level
     if os.environ.get('LOG_LEVEL') and not args.log_level:
         args.log_level = os.environ.get('LOG_LEVEL')
@@ -73,7 +73,7 @@ def validate_args(args):
             config.output = Path('/output')
         else:
             default_output = Path.home()
-            config.output = Path(f"{default_output}/output")
+            config.output = Path(f"{default_output}/m4b_merge/output")
     # Path Format
     if args.path_format:
         config.path_format = args.path_format
