@@ -48,7 +48,7 @@ def validate_args(args):
             config.junk_dir = Path('/input/done')
         else:
             default_input = Path.home()
-            config.junk_dir = Path(f"{default_input}/m4b_merge/input/done")
+            config.junk_dir = Path(f"{default_input}/m4b_merge/input")
     # Log Level
     if os.environ.get('LOG_LEVEL') and not args.log_level:
         args.log_level = os.environ.get('LOG_LEVEL')
