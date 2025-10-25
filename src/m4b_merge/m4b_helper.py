@@ -308,6 +308,7 @@ class M4bMerge:
             args.append("--no-conversion")
         else:
             args.append(f"--audio-bitrate={target_bitrate}")
+            args.append(f"--audio-codec=libfdk_aac")
             args.append(f"--audio-samplerate={target_samplerate}")
 
         # Append input path
@@ -369,7 +370,6 @@ class M4bMerge:
             'merge',
             f"--tmp-dir=/tmp/m4b-tool.{os.getpid()}",
             f"--output-file={self.book_output}.m4b",
-            f"--audio-codec=libfdk_aac",
             f"--audio-bitrate={target_bitrate}",
             f"--audio-samplerate={target_samplerate}"
         ]
