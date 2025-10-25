@@ -369,6 +369,7 @@ class M4bMerge:
             'merge',
             f"--tmp-dir=/tmp/m4b-tool.{os.getpid()}",
             f"--output-file={self.book_output}.m4b",
+            f"--enable-libfdk_aac",
             f"--audio-bitrate={target_bitrate}",
             f"--audio-samplerate={target_samplerate}"
         ]
