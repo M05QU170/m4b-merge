@@ -371,7 +371,7 @@ class M4bMerge:
             f"--output-file={self.book_output}.m4b",
             f"--audio-codec=libfdk_aac",
             f"--audio-bitrate={target_bitrate}",
-            f--audio-samplerate={target_samplerate}"
+            f"--audio-samplerate={target_samplerate}"
         ]
         # Add in main metadata and merge args
         args.extend(self.metadata_args)
