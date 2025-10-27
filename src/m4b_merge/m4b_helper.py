@@ -371,6 +371,7 @@ class M4bMerge:
             f"--tmp-dir=/tmp/m4b-tool.{os.getpid()}",
             f"--output-file={self.book_output}.m4b",
             f"--audio-bitrate={target_bitrate}",
+            f"--audio-codec=libfdk_aac",
             f"--audio-samplerate={target_samplerate}"
         ]
         # Add in main metadata and merge args
